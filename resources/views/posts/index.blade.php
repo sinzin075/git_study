@@ -11,8 +11,8 @@
         <div class="posts">
             @foreach ($posts as $post)
                 <div class="post">
-                    <h2 class="titel">{{$post->title}}</h2>
-                    <p class="body">{{$post->body}}</p>
+                    <h2 class = "title">{{$post->title}}</h2>
+                    <P class= "body">{{$post->body}}</P>
                 </div>
             @endforeach
         </div>
