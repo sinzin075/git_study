@@ -11,7 +11,6 @@
         <div class="posts">
             @foreach ($posts as $post)
                 <div class="post">
-
                     <h2 class = "title">
                         <a href="/posts/{{$post->id}}">{{$post->title}}</a>
                     </h2>
@@ -24,14 +23,5 @@
         <div class='paginate'>
             {{$posts->links()}}
         </div>
-        <script>
-            function deletePost(id){
-                'use strict'
-                
-                if(confirm('削除すると復元できません。\n本当に削除しますか？')){
-                    document.getElementById(`form_${id}`).submit();
-                }
-            }
-        </script>
     </body>
 </html>
