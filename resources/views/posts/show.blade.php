@@ -15,6 +15,7 @@
         <div class="content_post">
             <h3>本文</h3>
             <p>{{$post->body}}</p>
+            <a href="/categories/{{$post->category->id}}">{{ $post->category->name }}</a>
         </div>
     </div>
     <div class="edit"><a href="/posts/{{$post->id}}/edit">edit</a></div>
